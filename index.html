@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Project</title>
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div id="main-div">
+         <div class="text-div" id='add'>
+            <p class="text">Hello</p>
+            <span onclick="show_toggle(this.id)" id='1'>
+               <div class="dropdown">
+                  <p   id="change_this1">_ _ _ _</p>
+                  <div class="dropdown-content" id='myDropdown1'>
+                     <a  onclick="set_value(this.name, this.id)" name="Earth" id="1">Earth</a>
+                     <a  onclick="set_value(this.name, this.id)" name="World" id="1">World</a>
+                     <a  onclick="set_value(this.name, this.id)" name="Word" id="1">Word</a>
+                  </div>
+               </div>
+            </span>
+            <p>Its me</p>
+            <span onclick="show_toggle(this.id)" id='2'>
+               <div class="dropdown">
+                  <p   id="change_this2">_ _ _ _</p>
+                  <div class="dropdown-content" id='myDropdown2'>
+                     <a  onclick="set_value(this.name, this.id)" name="Mario" id="2">Mario</a>
+                     <a  onclick="set_value(this.name, this.id)" name="Morio" id="2">Morio</a>
+                     <a  onclick="set_value(this.name, this.id)" name="Murio" id="2">Murio</a>
+                  </div>
+               </div>
+            </span>
+         </div>
+      </div>
+      <div class="base64_btn">
+         <button type="button" class="base64" onclick="base64()">🔗Copy</button>
+      </div>
+      <div class="backdoor">
+         <button type="button" name="button" onclick="show_backdoor()">🔙🚪</button>
+      </div>
+      <!-- change_text -->
+      <div class="text-div" id="area">
+         <textarea rows="15" cols="120" id="text_to_change"></textarea>
+         <div class="buttons">
+            <button class="button" name="button" onclick="clear_text()">Clear</button>
+            <button class="button" name="button" onclick="add_text()">Add text</button>
+            <button class="button" name="button" onclick="add_from_nl()">Add from new line </button>
+            <button type="button" name="button" onclick="del_opt()">Delete option</button>
+         </div>
+      </div>
+      <!-- change_text -->
+      <div class="text-div" id="option-div">
+         <div class="" id="opts">
+            <h3>If the last word has less than 2 options in the dropdown menu, new options will be added to it</h3>
+            <input type="text" id='inp1' placeholder="Option 1">
+            <input type="text" id='inp2' placeholder="Option 2">
+         </div>
+         <button type="button" name="button" onclick="add_more()">Add more</button>
+         <button type="button" name="button" onclick="done_opt()">Add option</button>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
